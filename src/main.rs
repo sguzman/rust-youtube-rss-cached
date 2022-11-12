@@ -38,6 +38,13 @@ const NULL_ENTRY: EntryOptional = EntryOptional {
     published: None,
 };
 
+// Function that retrieves first cmd line argument and returns it
+fn get_arg() -> String {
+    let args: Vec<String> = std::env::args().collect();
+    let arg = &args[1];
+    arg.to_string()
+}
+
 // Function to handl parsing author from xml
 fn parse_author(reader: &mut Reader<&[u8]>) -> Option<String> {
     let mut buf = Vec::new();
@@ -163,7 +170,8 @@ fn parse_entry(
 }
 
 fn main() {
-    let xml: String = std::fs::read_to_string("./data/src/template.xml").unwrap();
+    let path = get_arg();
+    let xml: String = std::fs::read_to_string(path).unwrap();
 
     let mut reader = Reader::from_str(&xml);
     reader.trim_text(true);
