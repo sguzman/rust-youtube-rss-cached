@@ -10,7 +10,6 @@ extern crate serde;
 use quick_xml::events::Event;
 use quick_xml::reader::Reader;
 use serde::{Deserialize, Serialize};
-use serde_json::Result;
 
 // Struct for final json object to be serialized
 #[derive(Debug, PartialEq, Eq, Clone)]
