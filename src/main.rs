@@ -18,97 +18,7 @@ struct Entry {
     title: String,
     name: String,
     published: String,
-    updated: String,
     description: String,
-    thumbnail: String,
-    view_count: u64,
-}
-
-#[derive(Debug)]
-struct MediaCommunity {
-    statistics: Option<u64>,
-    star_rating: Option<u64>,
-    category: Option<String>,
-    keywords: Option<String>,
-}
-
-fn parse_media_community_builder(
-    reader: &mut Reader<&[u8]>,
-    state: Option<MediaCommunity>,
-) -> Option<MediaCommunity> {
-    // if state is none, return none
-    if state.is_none() {
-        return None;
-    }
-    let mut buf = Vec::new();
-
-    match reader.read_event_into(&mut buf) {
-        Ok(Event::Start(e)) => match e.name().as_ref() {
-            b"media:statistics" => {
-                let statistics = reader.read_text(e.name()).unwrap();
-                println!("Statistics: {}", statistics);
-            }
-            b"media:starRating" => {
-                let star_rating = reader.read_text(e.name()).unwrap();
-                println!("Star Rating: {}", star_rating);
-            }
-            b"media:category" => {
-                let category = reader.read_text(e.name()).unwrap();
-                println!("Category: {}", category);
-            }
-            b"media:keywords" => {
-                let keywords = reader.read_text(e.name()).unwrap();
-                println!("Keywords: {}", keywords);
-            }
-            _ => (),
-        },
-        Ok(Event::End(e)) => match e.name().as_ref() {
-            b"media:community" => return state,
-            _ => return None,
-        },
-        Ok(Event::Eof) => {
-            println!("Error not find {} end element", "media:community");
-            return None;
-        }
-        Err(e) => {
-            println!("Error at position {}: {:?}", reader.buffer_position(), e);
-            return None;
-        }
-        _ => {
-            println!("Error not find {} end element", "media:community");
-            return None;
-        }
-    }
-    buf.clear();
-    state
-}
-
-// Function to handl parsing media community element from xml
-fn parse_media_community(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Error> {
-    let mut buf = Vec::new();
-    loop {
-        match reader.read_event_into(&mut buf) {
-            Ok(Event::Start(e)) => match e.name().as_ref() {
-                b"media:starRating" => {
-                    let star_rating = reader.read_text(e.name()).unwrap();
-                    println!("Star Rating: {}", star_rating);
-                }
-                b"media:statistics" => {
-                    let statistics = reader.read_text(e.name()).unwrap();
-                    println!("Statistics: {}", statistics);
-                }
-                _ => (),
-            },
-            Ok(Event::End(e)) => match e.name().as_ref() {
-                b"media:community" => return Ok(()),
-                _ => (),
-            },
-            Ok(Event::Eof) => panic!("Error not find {} end element", "media:community"),
-            Err(e) => panic!("Error at position {}: {:?}", reader.buffer_position(), e),
-            _ => (),
-        }
-        buf.clear();
-    }
 }
 
 // Function to handl parsing media group element from xml
@@ -121,20 +31,9 @@ fn parse_media_group(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Error>
                     let title = reader.read_text(e.name()).unwrap();
                     println!("Title: {}", title);
                 }
-                b"media:content" => {
-                    let content = reader.read_text(e.name()).unwrap();
-                    println!("Content: {}", content);
-                }
-                b"media:thumbnail" => {
-                    let thumbnail = reader.read_text(e.name()).unwrap();
-                    println!("Thumbnail: {}", thumbnail);
-                }
                 b"media:description" => {
                     let description = reader.read_text(e.name()).unwrap();
                     println!("description: {}", description.len());
-                }
-                b"media:community" => {
-                    parse_media_community(reader).unwrap();
                 }
                 _ => (),
             },
