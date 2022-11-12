@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCRijo3ddMTht_IHyNSNXpNQ"/>
+ <id>yt:channel:UCRijo3ddMTht_IHyNSNXpNQ</id>
+ <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+ <title>Dude Perfect</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ"/>
+ <author>
+  <name>Dude Perfect</name>
+  <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+ </author>
+ <published>2009-03-17T05:44:36+00:00</published>
+ <entry>
+  <id>yt:video:YXXlSG-du7c</id>
+  <yt:videoId>YXXlSG-du7c</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Dude Perfect Goes to SPACE</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=YXXlSG-du7c"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-11-05T13:59:57+00:00</published>
+  <updated>2022-11-05T20:46:03+00:00</updated>
+  <media:group>
+   <media:title>Dude Perfect Goes to SPACE</media:title>
+   <media:content url="https://www.youtube.com/v/YXXlSG-du7c?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/YXXlSG-du7c/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Yes... Coby actually goes to SPACE!! Huge thanks to MoonDAO for sponsoring this video! MoonDAO's mission is to decentralize access to space research and exploration. Learn more here: https://moondao.com/dude-perfect
+
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+
+► Sail to the Bahamas w/ us on the DUDE PERFECT CRUISE: https://www.dudeperfectcruise.com/
+
+-- From the MoonDAO team -- 
+
+MoonDAO is a transparent governance project for decentralizing access to space research and exploration. Through the use of MoonDAO’s governance token, MoonDAO aims to align people from all over the world to create a collaborative and positive future where the benefits of space help all of humanity. Learn more about MoonDAO at https://moondao.com/dude-perfect
+
+MoonDAO is actively looking for space enthusiasts that would like to join MoonDAO's mission. Apply to contribute here: https://www.moondao.com/contribute. You could be our next member, or our next Astronaut! Our mission is to help to establish a presence on the Moon within the decade, and we need your help!
+    #[serde(rename = "favorites")]
+    favorites: String,
+Join our community on Discord: discord.gg/5KjkqutVRJ
+Follow us on Twitter: https://www.twitter.com/OfficialMoonDAO
+Find the rest of our socials and content: https://linktr.ee/MoonDAO
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment: Would you go to space??
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="278612" average="5.00" min="1" max="5"/>
+    <media:statistics views="3402597"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:hF6X2ap_6Q8</id>
+  <yt:videoId>hF6X2ap_6Q8</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Gun Game Airsoft Battle</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=hF6X2ap_6Q8"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-10-22T13:59:55+00:00</published>
+  <updated>2022-10-27T12:45:01+00:00</updated>
+  <media:group>
+   <media:title>Gun Game Airsoft Battle</media:title>
+   <media:content url="https://www.youtube.com/v/hF6X2ap_6Q8?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/hF6X2ap_6Q8/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Airsoft + NIGHT VISION + Gun Game = Best airsoft battle yet!
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+► Sail to the Bahamas w/ us on the DUDE PERFECT CRUISE: https://www.dudeperfectcruise.com/
+
+Music by Vo Williams: Thunder and Lightning
+► Click HERE for more MUSIC from Vo Williams - https://linktr.ee/thisisvo
+► Click HERE to visit Vo Williams' INSTAGRAM - https://www.instagram.com/thisisvo
+► Click HERE to download &quot;THUNDER AND LIGHTNING&quot; by Vo Williams - https://ffm.to/m42wej4
+
+Huge thanks once again to Swamp Sniper for helping us pull this off! 
+► Check out his channel here: https://youtube.com/c/SwampSniper
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+Thunder and Lightning
+Performed by Vo Williams
+Courtesy of Sound Dose Music Group
+Words and Music by Emanuel Frank Williams and Caleb Steven Schultz
+Sound Dose Music Group (BMI) / Caleb Steven Schultz (BMI)
+
+Bonus points if you're still reading this! 
+Comment: Can you handle the smoke? - Cory
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="231781" average="5.00" min="1" max="5"/>
+    <media:statistics views="5621616"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:etV_nxVU6l8</id>
+  <yt:videoId>etV_nxVU6l8</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Wedding Stereotypes</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=etV_nxVU6l8"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-10-08T14:00:04+00:00</published>
+  <updated>2022-11-03T23:44:27+00:00</updated>
+  <media:group>
+   <media:title>Wedding Stereotypes</media:title>
+   <media:content url="https://www.youtube.com/v/etV_nxVU6l8?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/etV_nxVU6l8/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Love 'em or Hate 'em, we all know 'em! Check out all the Wedding Stereotypes!
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+► Sail to the Bahamas w/ us on the DUDE PERFECT CRUISE: https://www.dudeperfectcruise.com/
+
+Special thanks to WWE Superstar Alexa Bliss for her incredible cameos!
+
+Filmed at The Grand Ivory Wedding Venue: https://thegrandivory.com/
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment your favorite line!
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="291916" average="5.00" min="1" max="5"/>
+    <media:statistics views="8209415"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:oW-ayP9BbHs</id>
+  <yt:videoId>oW-ayP9BbHs</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Stair Jump CHALLENGE</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=oW-ayP9BbHs"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-10-01T18:37:03+00:00</published>
+  <updated>2022-10-13T16:15:55+00:00</updated>
+  <media:group>
+   <media:title>Stair Jump CHALLENGE</media:title>
+   <media:content url="https://www.youtube.com/v/oW-ayP9BbHs?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/oW-ayP9BbHs/hqdefault.jpg" width="480" height="360"/>
+   <media:description>This should be an Olympic sport 😮‍💨</media:description>
+   <media:community>
+    <media:starRating count="746661" average="5.00" min="1" max="5"/>
+    <media:statistics views="10697580"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:_snnKw-EywM</id>
+  <yt:videoId>_snnKw-EywM</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Archery World Records</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=_snnKw-EywM"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-09-24T14:00:51+00:00</published>
+  <updated>2022-10-25T18:58:27+00:00</updated>
+  <media:group>
+   <media:title>Archery World Records</media:title>
+   <media:content url="https://www.youtube.com/v/_snnKw-EywM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/_snnKw-EywM/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Our most INSANE world records yet!! Special thanks to Bass Pro Shops for sponsoring this video! Head to http://basspro.com/ for all your outdoor needs!
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+
+► Watch more Archery Trick Shots from James: https://www.youtube.com/c/JamesJeanoutdoor
+
+Click HERE to get your copy of 2023 Guinness World Record Book: 
+► https://www.guinnessworldrecords.com/products/books/guinness-world-records-2023
+
+Sail to the Bahamas w/ us on the DUDE PERFECT CRUISE! ► https://www.dudeperfectcruise.com/
+
+Music by Knives At Sea: &quot;Come and Get It&quot;
+► INSTAGRAM: @knivesatsea
+► APPLE MUSIC: https://music.apple.com/gb/artist/knives-at-sea/1495302840
+► SPOTIFY: https://open.spotify.com/artist/2VZYuo718BYqHH2WW9qfNh?si=VK5i_4znQsCBsIfPkuAYSw
+► YOUTUBE: https://www.youtube.com/knivesatsea
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+“Come and Get It”
+Performed by Knives at Sea
+Courtesy of Ninja Tune Production Music
+Written by Ozzie Rodgers
+© Ninja Tune Production Music
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment: What world record we should break next?
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="198235" average="5.00" min="1" max="5"/>
+    <media:statistics views="6987743"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:DK0xCH--t8k</id>
+  <yt:videoId>DK0xCH--t8k</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Loser Gets Full Body Casted | OT 35</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=DK0xCH--t8k"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-09-10T14:00:11+00:00</published>
+  <updated>2022-10-22T21:07:54+00:00</updated>
+  <media:group>
+   <media:title>Loser Gets Full Body Casted | OT 35</media:title>
+   <media:content url="https://www.youtube.com/v/DK0xCH--t8k?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/DK0xCH--t8k/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Overtime is back with an INSANE Wheel punishment, the most Absurd Recurd you've ever heard, and a glass shattering BETCHA!!!
+Special thanks to PGA Omni Frisco Resort!
+Buy tickets for the Dude Perfect Cruise! https://www.dudeperfectcruise.com
+Be sure to tune into THURSDAY NIGHT FOOTBALL on Amazon Prime this Thursday, September 15th, as we broadcast the Chargers vs. Chiefs LIVE FROM DPHQ2!
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment: What segments do you want to see next time?!
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="239188" average="5.00" min="1" max="5"/>
+    <media:statistics views="7973230"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:ehPugxlo_oY</id>
+  <yt:videoId>ehPugxlo_oY</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Ultimate Mini Games Battle 2</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=ehPugxlo_oY"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-08-27T13:59:56+00:00</published>
+  <updated>2022-10-03T14:05:12+00:00</updated>
+  <media:group>
+   <media:title>Ultimate Mini Games Battle 2</media:title>
+   <media:content url="https://www.youtube.com/v/ehPugxlo_oY?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/ehPugxlo_oY/hqdefault.jpg" width="480" height="360"/>
+   <media:description>FIRST TO 4 STARS WINS! Huge thanks to Koosh for sponsoring this video! Head to your nearest Target retailer to pick up your own Koosh Flix Stix! #KeepItKoosh ► https://www.target.com/p/koosh-flix-stix/-/A-85403381#lnk=sametab
+Sail to the Bahamas w/ us on the DUDE PERFECT CRUISE! ► https://www.dudeperfectcruise.com/
+
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+
+Music: &quot;Really Good Feeling&quot; by Nevada Wild
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment: What was your favorite mini game?
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="238436" average="5.00" min="1" max="5"/>
+    <media:statistics views="12322437"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:_YUc8tXDjxQ</id>
+  <yt:videoId>_YUc8tXDjxQ</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>World's Longest Trick Shot Machine</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=_YUc8tXDjxQ"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-08-13T14:00:59+00:00</published>
+  <updated>2022-09-12T21:46:55+00:00</updated>
+  <media:group>
+   <media:title>World's Longest Trick Shot Machine</media:title>
+   <media:content url="https://www.youtube.com/v/_YUc8tXDjxQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/_YUc8tXDjxQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description>OUR CRAZIEST RUBE GOLDBERG YET! Big thanks to SoFi for sponsoring this video! Download the SoFi app here ► https://sofi.app.link/uFLjwpu7jnb and enter to win an expense paid trip to DUDE PERFECT HQ! Learn more about the sweepstakes here ► http://sofi.com/dudeperfectsweeps
+
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+
+Another HUGE thanks to Joseph &amp; Lily for helping us pull off these incredible machines! Their work is TOP NOTCH! Check out their channels below!!
+
+► Subscribe to Joseph's Machines YouTube: https://www.youtube.com/c/JosephsMachines?sub_confirmation=1
+► Subscribe to Lily Hevesh: https://www.youtube.com/Hevesh?sub_confirmation=1
+
+Music by Sun Heat: &quot;Let's Get Started&quot;
+► Click HERE to listen on Spotify -
+https://open.spotify.com/artist/7bvsCuLF2FR79zNzUbv18f?si=EqI9UINJTFKjBFw9tvDq5
+► Click HERE to listen on Apple Music - https://music.apple.com/artist/sun-heat/1242489512
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+“Let’s Get Started”
+Performed by Sun Heat
+Courtesy of Secret Road and All Media Music
+Words and Music by Jesse Epstein and Rick Seibold
+(C) Incognito Street Music (BMI) / Sometimes a Mountain (BMI) / Mighty Maverick Music (BMI)
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment: What was your favorite part of the machine?
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="235971" average="5.00" min="1" max="5"/>
+    <media:statistics views="7242615"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:4oe-Cy_dIQk</id>
+  <yt:videoId>4oe-Cy_dIQk</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Dude Perfect EXPOSED 🤫🤫🤫</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=4oe-Cy_dIQk"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-08-06T13:45:22+00:00</published>
+  <updated>2022-10-14T10:23:41+00:00</updated>
+  <media:group>
+   <media:title>Dude Perfect EXPOSED 🤫🤫🤫</media:title>
+   <media:content url="https://www.youtube.com/v/4oe-Cy_dIQk?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/4oe-Cy_dIQk/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="1406674" average="5.00" min="1" max="5"/>
+    <media:statistics views="27815341"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:jcwaXQ2tGl8</id>
+  <yt:videoId>jcwaXQ2tGl8</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>It Just Keeps Getting Better 😂🏓</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=jcwaXQ2tGl8"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-08-02T20:33:50+00:00</published>
+  <updated>2022-10-21T05:05:52+00:00</updated>
+  <media:group>
+   <media:title>It Just Keeps Getting Better 😂🏓</media:title>
+   <media:content url="https://www.youtube.com/v/jcwaXQ2tGl8?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/jcwaXQ2tGl8/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="1183903" average="5.00" min="1" max="5"/>
+    <media:statistics views="28836418"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:TJc4HjMBpSM</id>
+  <yt:videoId>TJc4HjMBpSM</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Impossible Ping Pong Vase Challenge</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=TJc4HjMBpSM"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-07-21T20:30:28+00:00</published>
+  <updated>2022-09-08T08:00:36+00:00</updated>
+  <media:group>
+   <media:title>Impossible Ping Pong Vase Challenge</media:title>
+   <media:content url="https://www.youtube.com/v/TJc4HjMBpSM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/TJc4HjMBpSM/hqdefault.jpg" width="480" height="360"/>
+   <media:description></media:description>
+   <media:community>
+    <media:starRating count="954365" average="5.00" min="1" max="5"/>
+    <media:statistics views="14230278"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:fIgysTSIXfE</id>
+  <yt:videoId>fIgysTSIXfE</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Bucket List: Desert</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=fIgysTSIXfE"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-07-16T14:00:00+00:00</published>
+  <updated>2022-08-11T20:16:28+00:00</updated>
+  <media:group>
+   <media:title>Bucket List: Desert</media:title>
+   <media:content url="https://www.youtube.com/v/fIgysTSIXfE?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/fIgysTSIXfE/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Qatar Bucket List checked all the boxes! Dune bashing, world record roller coasters, a trip to all 8 FIFA World Cup stadiums, and more. Learn about the incredible experiences Qatar has to offer and explore more at Qatar2022.qa and VisitQatar.com.
+
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment: Where should we go next?!
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+------------
+Check out some of the awesome things we did for yourself!
+► Learn more about all 8 World Cup stadiums: https://www.qatar2022.qa/en/stadiums 
+► Doha Quest: https://www.dohaquest.com/en 
+► Hilton Salwa Beach Resort: https://www.hilton.com/en/hotels/dohsbhi-hilton-salwa-beach-resort-villas/ 
+► Doha Golf Club: https://www.dohagolfclub.com/ 
+► Losail Race Track: https://www.lcsc.qa/
+► Banana Island: https://www.anantara.com/en/banana-island-doha 
+► Jet Ski experiences: https://activities.marriott.com/things-to-do/V28Hi3LEZnL7p7-intercontinental-doha-jet-ski-rental 
+------------
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="238474" average="5.00" min="1" max="5"/>
+    <media:statistics views="7202866"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:venrE8gdz30</id>
+  <yt:videoId>venrE8gdz30</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Model Rocket Battle 3 | Dude Perfect</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=venrE8gdz30"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-07-02T14:00:12+00:00</published>
+  <updated>2022-07-26T19:02:43+00:00</updated>
+  <media:group>
+   <media:title>Model Rocket Battle 3 | Dude Perfect</media:title>
+   <media:content url="https://www.youtube.com/v/venrE8gdz30?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/venrE8gdz30/hqdefault.jpg" width="480" height="360"/>
+   <media:description>WINNER GOES TO OUTER SPACE! Rocket battle 3 is OFF THE CHARTS! 
+Thanks to MoonDAO for sending us to space! MoonDAO is an international collective of humans that aim to decentralize space exploration. Learn more here: https://moondao.com/
+
+The winner of Rocket Battle 3 will be going to space in an upcoming video!!
+
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect 
+
+Music by Zayde Wølf: &quot;Renegade&quot;
+► More from Zayde: linktr.ee/zaydewolf
+► Webiste: http://www.zaydewolf.com
+► IG: http://www.instagram.com/zaydewolf 
+
+Special thanks to LocPrecision and all involved who helped us build these epic rockets!
+►  https://locprecision.com/
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+Song: RENEGADE
+Artist: Zayde Wølf
+Written by Dustin Brian Burnett, Darren Elder
+(C) Lyric House Denver Publishing o/b/o Red Coco Publishing (ASCAP) / Abolition Strategy Publishing (ASCAP)
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment: I'll buy Ty a new drone lol!
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="561735" average="5.00" min="1" max="5"/>
+    <media:statistics views="21040885"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:s1tEvufgEyU</id>
+  <yt:videoId>s1tEvufgEyU</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>Real Life Invisibility Shield | OT34</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=s1tEvufgEyU"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-06-18T14:00:02+00:00</published>
+  <updated>2022-09-18T03:34:28+00:00</updated>
+  <media:group>
+   <media:title>Real Life Invisibility Shield | OT34</media:title>
+   <media:content url="https://www.youtube.com/v/s1tEvufgEyU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/s1tEvufgEyU/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Overtime is BACK!!! Real life invisibility shield in Cool Not Cool, and a WILD Top Ten! 
+Come see us on tour! https://dudeperfect.com/tour
+Special thanks to Daniel Krafft for our 50 MILLION SUBSCRIBER trophy!
+Check out his channel! https://www.youtube.com/c/DanielKrafft
+► Thanks for subscribing! - http://bit.ly/SubDudePerfect
+
+NEXT LEVEL STUFF 
+-------------------------------------------
+🎒 NEW Merch - http://bit.ly/DPStore
+📱 Text us - (469) 205-7005
+🔔 Hit the bell next to Subscribe so you don't miss a video!
+👨🏻‍💻 Watch our newest vids! - http://bit.ly/NewDPVids
+📕 Read our Book - &quot;101 Tips, Tricks and Cool Stuff&quot; - https://bit.ly/NewDPBook
+
+Follow our Instagrams so we can be best friends 
+-------------------------------------------
+🏆 http://Instagram.com/DudePerfect
+🧔🏻 http://Instagram.com/TylerNToney
+👱🏻‍♂️ http://Instagram.com/Cody_Jones_
+🙋🏻‍♂️ http://Instagram.com/CobyCotton
+👨‍🦰 http://Instagram.com/GarrettHilbert
+⛹🏻‍♂️ http://Instagram.com/CoryCotton
+-------------------------------------------
+Bonus points if you're still reading this! 
+Comment: If you could have any super power, what would it be?!?
+
+Click here to learn more about Dude Perfect:
+http://bit.ly/AboutDudePerfect
+
+As always...Go Big and God Bless!
+- Your friends at Dude Perfect
+
+Business or Media, please contact us at: 
+Dude@DudePerfect.com
+
+------------
+
+5 Best Friends and a Panda.
+If you like Sports + Comedy, come join the Dude Perfect team!
+
+Best known for trick shots, stereotypes, battles, bottle flips, ping pong shots and all-around competitive fun, Dude Perfect prides ourselves in making the absolute best family-friendly entertainment possible! Welcome to the crew! 
+
+Pound it 👊🏻 Noggin 🙇🏻‍♂️ 
+- Dude Perfect</media:description>
+   <media:community>
+    <media:starRating count="294367" average="5.00" min="1" max="5"/>
+    <media:statistics views="10793387"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:IlhYyVRklDI</id>
+  <yt:videoId>IlhYyVRklDI</yt:videoId>
+  <yt:channelId>UCRijo3ddMTht_IHyNSNXpNQ</yt:channelId>
+  <title>That Ball Touched The CLOUDS 🏈☁️ #shorts</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=IlhYyVRklDI"/>
+  <author>
+   <name>Dude Perfect</name>
+   <uri>https://www.youtube.com/channel/UCRijo3ddMTht_IHyNSNXpNQ</uri>
+  </author>
+  <published>2022-06-15T21:58:37+00:00</published>
+  <updated>2022-08-24T11:37:02+00:00</updated>
+  <media:group>
+   <media:title>That Ball Touched The CLOUDS 🏈☁️ #shorts</media:title>
+   <media:content url="https://www.youtube.com/v/IlhYyVRklDI?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/IlhYyVRklDI/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Lol at Ty spiking himself in the face at the end 😂</media:description>
+   <media:community>
+    <media:starRating count="5787934" average="5.00" min="1" max="5"/>
+    <media:statistics views="154827583"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>

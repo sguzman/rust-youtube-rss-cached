@@ -3,6 +3,10 @@ name = "youtube-rss-cached"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "youtube"
+path = "src/main.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+quick-xml = "0.26.0"
