@@ -9,6 +9,8 @@ extern crate serde;
 
 use quick_xml::events::Event;
 use quick_xml::reader::Reader;
+use serde::{Deserialize, Serialize};
+use serde_json::Result;
 
 // Struct for final json object to be serialized
 #[derive(Debug, PartialEq, Eq, Clone)]
@@ -20,7 +22,7 @@ pub struct EntryOptional {
     pub published: Option<String>,
 }
 
-#[derive(Debug, PartialEq, Eq, Clone)]
+#[derive(Debug, PartialEq, Eq, Clone, Serialize, Deserialize)]
 struct Entry {
     video_id: String,
     channel_id: String,
@@ -181,7 +183,14 @@ fn main() {
             Ok(Event::Start(e)) => match e.name().as_ref() {
                 b"entry" => {
                     if let Some(entry) = parse_entry(&mut reader, Some(NULL_ENTRY)) {
-                        println!("{:#?}", entry);
+                        let entry = Entry {
+                            video_id: entry.video_id.unwrap(),
+                            channel_id: entry.channel_id.unwrap(),
+                            title: entry.title.unwrap(),
+                            author: entry.author.unwrap(),
+                            published: entry.published.unwrap(),
+                        };
+                        println!("{}", serde_json::to_string(&entry).unwrap());
                     }
                 }
                 _ => (),
