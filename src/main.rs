@@ -1,19 +1,71 @@
 /*
-    * This file is part of youtube rss cached project of mine.
-    * This program will fetch youtube rss feed and cache it in a file by entry
-    *
-*/ 
+ * This file is part of youtube rss cached project of mine.
+ * This program will fetch youtube rss feed and cache it in a file by entry
+ *
+*/
 
 extern crate quick_xml;
 
 use quick_xml::events::Event;
 use quick_xml::reader::Reader;
 
+#[derive(Debug)]
 struct MediaCommunity {
-    statistics: u64,
-    star_rating: u64,
+    statistics: Option<u64>,
+    star_rating: Option<u64>,
     category: Option<String>,
     keywords: Option<String>,
+}
+
+fn parse_media_community_builder(
+    reader: &mut Reader<&[u8]>,
+    state: Option<MediaCommunity>,
+) -> Option<MediaCommunity> {
+    // if state is none, return none
+    if state.is_none() {
+        return None;
+    }
+    let mut buf = Vec::new();
+
+    match reader.read_event_into(&mut buf) {
+        Ok(Event::Start(e)) => match e.name().as_ref() {
+            b"media:statistics" => {
+                let statistics = reader.read_text(e.name()).unwrap();
+                println!("\tStatistics: {}", statistics);
+            }
+            b"media:starRating" => {
+                let star_rating = reader.read_text(e.name()).unwrap();
+                println!("\tStar Rating: {}", star_rating);
+            }
+            b"media:category" => {
+                let category = reader.read_text(e.name()).unwrap();
+                println!("\tCategory: {}", category);
+            }
+            b"media:keywords" => {
+                let keywords = reader.read_text(e.name()).unwrap();
+                println!("\tKeywords: {}", keywords);
+            }
+            _ => (),
+        },
+        Ok(Event::End(e)) => match e.name().as_ref() {
+            b"media:community" => return state,
+            _ => return None,
+        },
+        Ok(Event::Eof) => {
+            println!("Error not find {} end element", "media:community");
+            return None;
+        }
+        Err(e) => {
+            println!("Error at position {}: {:?}", reader.buffer_position(), e);
+            return None;
+        }
+        _ => {
+            println!("Error not find {} end element", "media:community");
+            return None;
+        }
+    }
+    buf.clear();
+    state
 }
 
 // Function to handl parsing media community element from xml
@@ -21,33 +73,29 @@ fn parse_media_community(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Er
     let mut buf = Vec::new();
     loop {
         match reader.read_event_into(&mut buf) {
-            Ok(Event::Start(e)) => {
-                match e.name().as_ref() {
-                    b"media:statistics" => {
-                        let statistics = reader.read_text(e.name()).unwrap();
-                        println!("\tStatistics: {}", statistics);
-                    }
-                    b"media:starRating" => {
-                        let star_rating = reader.read_text(e.name()).unwrap();
-                        println!("\tStar Rating: {}", star_rating);
-                    }
-                    b"media:category" => {
-                        let category = reader.read_text(e.name()).unwrap();
-                        println!("\tCategory: {}", category);
-                    }
-                    b"media:keywords" => {
-                        let keywords = reader.read_text(e.name()).unwrap();
-                        println!("\tKeywords: {}", keywords);
-                    }
-                    _ => (),
+            Ok(Event::Start(e)) => match e.name().as_ref() {
+                b"media:statistics" => {
+                    let statistics = reader.read_text(e.name()).unwrap();
+                    println!("\tStatistics: {}", statistics);
                 }
-            }
-            Ok(Event::End(e)) => {
-                match e.name().as_ref() {
-                    b"media:community" => return Ok(()),
-                    _ => (),
+                b"media:starRating" => {
+                    let star_rating = reader.read_text(e.name()).unwrap();
+                    println!("\tStar Rating: {}", star_rating);
                 }
-            }
+                b"media:category" => {
+                    let category = reader.read_text(e.name()).unwrap();
+                    println!("\tCategory: {}", category);
+                }
+                b"media:keywords" => {
+                    let keywords = reader.read_text(e.name()).unwrap();
+                    println!("\tKeywords: {}", keywords);
+                }
+                _ => (),
+            },
+            Ok(Event::End(e)) => match e.name().as_ref() {
+                b"media:community" => return Ok(()),
+                _ => (),
+            },
             Ok(Event::Eof) => panic!("Error not find {} end element", "media:community"),
             Err(e) => panic!("Error at position {}: {:?}", reader.buffer_position(), e),
             _ => (),
@@ -61,33 +109,29 @@ fn parse_media_group(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Error>
     let mut buf = Vec::new();
     loop {
         match reader.read_event_into(&mut buf) {
-            Ok(Event::Start(e)) => {
-                match e.name().as_ref() {
-                    b"media:title" => {
-                        let title = reader.read_text(e.name()).unwrap();
-                        println!("\tTitle: {}", title);
-                    }
-                    b"media:content" => {
-                        let content = reader.read_text(e.name()).unwrap();
-                        println!("\tContent: {}", content);
-                    }
-                    b"media:thumbnail" => {
-                        let thumbnail = reader.read_text(e.name()).unwrap();
-                        println!("\tThumbnail: {}", thumbnail);
-                    }
-                    b"media:description" => {
-                        let description = reader.read_text(e.name()).unwrap();
-                        println!("\tdescription: {}", description);
-                    }
-                    _ => (),
+            Ok(Event::Start(e)) => match e.name().as_ref() {
+                b"media:title" => {
+                    let title = reader.read_text(e.name()).unwrap();
+                    println!("\tTitle: {}", title);
                 }
-            }
-            Ok(Event::End(e)) => {
-                match e.name().as_ref() {
-                    b"media:group" => return Ok(()),
-                    _ => (),
+                b"media:content" => {
+                    let content = reader.read_text(e.name()).unwrap();
+                    println!("\tContent: {}", content);
                 }
-            }
+                b"media:thumbnail" => {
+                    let thumbnail = reader.read_text(e.name()).unwrap();
+                    println!("\tThumbnail: {}", thumbnail);
+                }
+                b"media:description" => {
+                    let description = reader.read_text(e.name()).unwrap();
+                    println!("\tdescription: {}", description);
+                }
+                _ => (),
+            },
+            Ok(Event::End(e)) => match e.name().as_ref() {
+                b"media:group" => return Ok(()),
+                _ => (),
+            },
             Ok(Event::Eof) => panic!("Error not find {} end element", "media:group"),
             Err(e) => panic!("Error at position {}: {:?}", reader.buffer_position(), e),
             _ => (),
@@ -101,25 +145,21 @@ fn parse_author(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Error> {
     let mut buf = Vec::new();
     loop {
         match reader.read_event_into(&mut buf) {
-            Ok(Event::Start(e)) => {
-                match e.name().as_ref() {
-                    b"name" => {
-                        let name = reader.read_text(e.name()).unwrap();
-                        println!("\tName: {}", name);
-                    }
-                    b"uri" => {
-                        let uri = reader.read_text(e.name()).unwrap();
-                        println!("\tUri: {}", uri);
-                    }
-                    _ => (),
+            Ok(Event::Start(e)) => match e.name().as_ref() {
+                b"name" => {
+                    let name = reader.read_text(e.name()).unwrap();
+                    println!("\tName: {}", name);
                 }
-            }
-            Ok(Event::End(e)) => {
-                match e.name().as_ref() {
-                    b"author" => return Ok(()),
-                    _ => (),
+                b"uri" => {
+                    let uri = reader.read_text(e.name()).unwrap();
+                    println!("\tUri: {}", uri);
                 }
-            }
+                _ => (),
+            },
+            Ok(Event::End(e)) => match e.name().as_ref() {
+                b"author" => return Ok(()),
+                _ => (),
+            },
             Ok(Event::Eof) => panic!("Error not find {} end element", "author"),
             Err(e) => panic!("Error at position {}: {:?}", reader.buffer_position(), e),
             _ => (),
@@ -165,12 +205,10 @@ fn parse_entry(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Error> {
                     _ => (),
                 }
             }
-            Ok(Event::End(e)) => {
-                match e.name().as_ref() {
-                    b"entry" => return Ok(()),
-                    _ => (),
-                }
-            }
+            Ok(Event::End(e)) => match e.name().as_ref() {
+                b"entry" => return Ok(()),
+                _ => (),
+            },
             Ok(Event::Eof) => panic!("Error not find {} end element", "entry"),
             Err(e) => panic!("Error at position {}: {:?}", reader.buffer_position(), e),
             _ => (),
@@ -178,7 +216,6 @@ fn parse_entry(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Error> {
         buf.clear();
     }
 }
-
 
 fn main() {
     let xml: String = std::fs::read_to_string("./data/src/template.xml").unwrap();
@@ -197,14 +234,12 @@ fn main() {
             // exits the loop when reaching end of file
             Ok(Event::Eof) => break,
 
-            Ok(Event::Start(e)) => {
-                match e.name().as_ref() {
-                    b"entry" => {
-                        parse_entry(&mut reader).unwrap();
-                    },
-                    _ => (),
+            Ok(Event::Start(e)) => match e.name().as_ref() {
+                b"entry" => {
+                    parse_entry(&mut reader).unwrap();
                 }
-            }
+                _ => (),
+            },
             _ => (),
         }
         buf.clear();
