@@ -5,9 +5,24 @@
 */
 
 extern crate quick_xml;
+extern crate serde;
 
 use quick_xml::events::Event;
 use quick_xml::reader::Reader;
+
+// Struct for final json object to be serialized
+#[derive(Debug, PartialEq, Eq, Clone)]
+struct Entry {
+    video_id: String,
+    channel_id: String,
+    title: String,
+    name: String,
+    published: String,
+    updated: String,
+    description: String,
+    thumbnail: String,
+    view_count: u64,
+}
 
 #[derive(Debug)]
 struct MediaCommunity {
@@ -31,19 +46,19 @@ fn parse_media_community_builder(
         Ok(Event::Start(e)) => match e.name().as_ref() {
             b"media:statistics" => {
                 let statistics = reader.read_text(e.name()).unwrap();
-                println!("\tStatistics: {}", statistics);
+                println!("Statistics: {}", statistics);
             }
             b"media:starRating" => {
                 let star_rating = reader.read_text(e.name()).unwrap();
-                println!("\tStar Rating: {}", star_rating);
+                println!("Star Rating: {}", star_rating);
             }
             b"media:category" => {
                 let category = reader.read_text(e.name()).unwrap();
-                println!("\tCategory: {}", category);
+                println!("Category: {}", category);
             }
             b"media:keywords" => {
                 let keywords = reader.read_text(e.name()).unwrap();
-                println!("\tKeywords: {}", keywords);
+                println!("Keywords: {}", keywords);
             }
             _ => (),
         },
@@ -74,21 +89,13 @@ fn parse_media_community(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Er
     loop {
         match reader.read_event_into(&mut buf) {
             Ok(Event::Start(e)) => match e.name().as_ref() {
-                b"media:statistics" => {
-                    let statistics = reader.read_text(e.name()).unwrap();
-                    println!("\tStatistics: {}", statistics);
-                }
                 b"media:starRating" => {
                     let star_rating = reader.read_text(e.name()).unwrap();
-                    println!("\tStar Rating: {}", star_rating);
+                    println!("Star Rating: {}", star_rating);
                 }
-                b"media:category" => {
-                    let category = reader.read_text(e.name()).unwrap();
-                    println!("\tCategory: {}", category);
-                }
-                b"media:keywords" => {
-                    let keywords = reader.read_text(e.name()).unwrap();
-                    println!("\tKeywords: {}", keywords);
+                b"media:statistics" => {
+                    let statistics = reader.read_text(e.name()).unwrap();
+                    println!("Statistics: {}", statistics);
                 }
                 _ => (),
             },
@@ -112,19 +119,22 @@ fn parse_media_group(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Error>
             Ok(Event::Start(e)) => match e.name().as_ref() {
                 b"media:title" => {
                     let title = reader.read_text(e.name()).unwrap();
-                    println!("\tTitle: {}", title);
+                    println!("Title: {}", title);
                 }
                 b"media:content" => {
                     let content = reader.read_text(e.name()).unwrap();
-                    println!("\tContent: {}", content);
+                    println!("Content: {}", content);
                 }
                 b"media:thumbnail" => {
                     let thumbnail = reader.read_text(e.name()).unwrap();
-                    println!("\tThumbnail: {}", thumbnail);
+                    println!("Thumbnail: {}", thumbnail);
                 }
                 b"media:description" => {
                     let description = reader.read_text(e.name()).unwrap();
-                    println!("\tdescription: {}", description);
+                    println!("description: {}", description.len());
+                }
+                b"media:community" => {
+                    parse_media_community(reader).unwrap();
                 }
                 _ => (),
             },
@@ -148,11 +158,11 @@ fn parse_author(reader: &mut Reader<&[u8]>) -> Result<(), quick_xml::Error> {
             Ok(Event::Start(e)) => match e.name().as_ref() {
                 b"name" => {
                     let name = reader.read_text(e.name()).unwrap();
-                    println!("\tName: {}", name);
+                    println!("Name: {}", name);
                 }
                 b"uri" => {
                     let uri = reader.read_text(e.name()).unwrap();
-                    println!("\tUri: {}", uri);
+                    println!("Uri: {}", uri);
                 }
                 _ => (),
             },
@@ -229,6 +239,7 @@ fn main() {
         // NOTE: this is the generic case when we don't know about the input BufRead.
         // when the input is a &str or a &[u8], we don't actually need to use another
         // buffer, we could directly call `reader.read_event()`
+        println!(">>>>>>>>");
         match reader.read_event_into(&mut buf) {
             Err(e) => panic!("Error at position {}: {:?}", reader.buffer_position(), e),
             // exits the loop when reaching end of file
@@ -243,5 +254,6 @@ fn main() {
             _ => (),
         }
         buf.clear();
+        println!("<<<<<<<<");
     }
 }

@@ -10,3 +10,5 @@ path = "src/main.rs"
 
 [dependencies]
 quick-xml = "0.26.0"
+serde = "1.0.147"
+serde_json = "1.0.87"
