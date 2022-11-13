@@ -242,7 +242,6 @@ fn parse(xml: &str, dst: &str) -> () {
                         let string: String = serde_json::to_string(&entry).unwrap();
                         let string: &str = string.as_ref();
                         write_file_string(dst, string);
-                        println!("{}", string.len());
                     }
                 }
                 _ => (),
@@ -259,7 +258,7 @@ fn main() {
         .build_global()
         .unwrap();
 
-    println!("{}", "bye :(");
+    println!("{}", "Hi :)");
     // Get path to directory of xml files
     let src = get_src_dir();
     let dst = get_dst_dir();
