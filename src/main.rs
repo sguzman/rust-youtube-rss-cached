@@ -4,8 +4,11 @@
  *
 */
 
+extern crate md5;
 extern crate quick_xml;
+extern crate rayon;
 extern crate serde;
+extern crate serde_json;
 
 use quick_xml::events::Event;
 use quick_xml::reader::Reader;
@@ -55,6 +58,19 @@ fn get_files(path: &str) -> Vec<String> {
 
 fn get_file_string(path: &str) -> String {
     std::fs::read_to_string(path).unwrap()
+}
+
+// Compute md5 hash of a string
+fn get_md5_hash(s: &str) -> String {
+    format!("{:x}", md5::compute(s))
+}
+
+// Write JSON object to a file
+fn write_file_string(path: &str, json: &str) {
+    let digest = get_md5_hash(json);
+    let file_path = format!("{}/{}.json", path, digest);
+
+    std::fs::write(file_path, json).unwrap();
 }
 
 // Function that retrieves first cmd line argument and returns it
@@ -195,7 +211,7 @@ fn parse_entry(
 }
 
 // Function to handle parsing xml
-fn parse(xml: &str) -> () {
+fn parse(xml: &str, dst: &str) -> () {
     // Load file
     let xml = get_file_string(xml);
     let mut reader = Reader::from_str(&xml);
@@ -222,7 +238,11 @@ fn parse(xml: &str) -> () {
                             author: entry.author.unwrap(),
                             published: entry.published.unwrap(),
                         };
-                        println!("{}", serde_json::to_string(&entry).unwrap());
+
+                        let string: String = serde_json::to_string(&entry).unwrap();
+                        let string: &str = string.as_ref();
+                        write_file_string(dst, string);
+                        println!("{}", string.len());
                     }
                 }
                 _ => (),
@@ -247,6 +267,8 @@ fn main() {
 
     // Use Rayon to parse files in parallel
     files.par_iter().for_each(|file| {
-        parse(file);
+        parse(file, &dst);
     });
+
+    println!("{}", "bye :(")
 }

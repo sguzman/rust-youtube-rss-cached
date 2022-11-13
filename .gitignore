@@ -2,3 +2,6 @@
 Cargo.lock
 youtube
 *.xml
+data/
+data/items
+data/rss
