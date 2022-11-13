@@ -58,9 +58,15 @@ fn get_file_string(path: &str) -> String {
 }
 
 // Function that retrieves first cmd line argument and returns it
-fn get_arg() -> String {
+fn get_src_dir() -> String {
     let args: Vec<String> = std::env::args().collect();
     let arg = &args[1];
+    arg.to_string()
+}
+
+fn get_dst_dir() -> String {
+    let args: Vec<String> = std::env::args().collect();
+    let arg = &args[2];
     arg.to_string()
 }
 
@@ -233,10 +239,11 @@ fn main() {
         .build_global()
         .unwrap();
     // Get path to directory of xml files
-    let path = get_arg();
+    let src = get_src_dir();
+    let dst = get_dst_dir();
 
     // Get all files in directory
-    let files = get_files(&path);
+    let files = get_files(&src);
 
     // Use Rayon to parse files in parallel
     files.par_iter().for_each(|file| {
