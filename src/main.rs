@@ -9,6 +9,7 @@ extern crate serde;
 
 use quick_xml::events::Event;
 use quick_xml::reader::Reader;
+use rayon::prelude::*;
 use serde::{Deserialize, Serialize};
 
 // Struct for final json object to be serialized
@@ -37,6 +38,24 @@ const NULL_ENTRY: EntryOptional = EntryOptional {
     author: None,
     published: None,
 };
+
+// Return all files in a directory
+fn get_files(path: &str) -> Vec<String> {
+    let mut files = Vec::new();
+    for entry in std::fs::read_dir(path).unwrap() {
+        let entry = entry.unwrap();
+        let path = entry.path();
+        if path.is_file() {
+            files.push(path.to_str().unwrap().to_string());
+        }
+    }
+
+    files
+}
+
+fn get_file_string(path: &str) -> String {
+    std::fs::read_to_string(path).unwrap()
+}
 
 // Function that retrieves first cmd line argument and returns it
 fn get_arg() -> String {
@@ -169,10 +188,10 @@ fn parse_entry(
     }
 }
 
-fn main() {
-    let path = get_arg();
-    let xml: String = std::fs::read_to_string(path).unwrap();
-
+// Function to handle parsing xml
+fn parse(xml: &str) -> () {
+    // Load file
+    let xml = get_file_string(xml);
     let mut reader = Reader::from_str(&xml);
     reader.trim_text(true);
     let mut buf = Vec::new();
@@ -206,4 +225,21 @@ fn main() {
         }
         buf.clear();
     }
+}
+
+fn main() {
+    rayon::ThreadPoolBuilder::new()
+        .num_threads(16)
+        .build_global()
+        .unwrap();
+    // Get path to directory of xml files
+    let path = get_arg();
+
+    // Get all files in directory
+    let files = get_files(&path);
+
+    // Use Rayon to parse files in parallel
+    files.par_iter().for_each(|file| {
+        parse(file);
+    });
 }
