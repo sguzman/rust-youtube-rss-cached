@@ -258,12 +258,15 @@ fn main() {
         .num_threads(16)
         .build_global()
         .unwrap();
+
+    println!("{}", "bye :(");
     // Get path to directory of xml files
     let src = get_src_dir();
     let dst = get_dst_dir();
 
     // Get all files in directory
     let files = get_files(&src);
+    println!("Processing {} files", files.len());
 
     // Use Rayon to parse files in parallel
     files.par_iter().for_each(|file| {
